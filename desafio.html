@@ -1,0 +1,114 @@
+<!-- este parâmetro indica que o documento é um HTML-->
+<!DOCTYPE html>
+
+<!-- este parâmetro indica que a lingua é em português-BR-->
+<html lang="pt-Br">
+
+  <head>
+    <!-- este parâmetro corrige a gramatica e acentuação(tipo de dicionário)-->
+    <meta charset="UTF-8" />
+
+    <!-- este parâmetro força o IE a renderizar com a mais recente-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- este parâmetro controla o tamanho e a forma para uso em celular-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- este parâmetro coloca um nome na aba do navegador e descritivo na página de procura-->
+    <meta name="description" content="Codificador e Decodificador de texto. Esta página foi um challenge do programa ONE (Oracle Next Education) + Alura, desenvolvido para aprimorar os conhecimentos em lógica de programação, HTML, CSS e JavaScript.">
+    
+    <title>Encoder.TXT</title>
+    
+    <!-- este parâmetro indica o caminho para o arquivo de reset do CSS-->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+
+    <!-- este parâmetro indica o caminho para o arquivo CSS do HTML-->
+    <link rel="stylesheet" type="text/css" href="style-desafio.css"/>
+  
+  </head>
+
+  <body class="container">
+
+    <header>
+
+      <div class="cabecalho">
+
+        <img id="banner" src="https://www.alura.com.br/assets/img/challenges/oracle-one/logo_oracleAlura-ptbr_branca.1657102612.svg">
+        <h1 class="titulo-principal">Criptógrafo_Descriptógrafo</h1>
+      
+      </div>
+    
+    </header>
+
+    <main class="main-container">   
+
+      <fieldset>
+        
+        <legend for="texto-principal">Texto à Criptografar</legend>
+        <textarea autofocus cols="50" rows="10" id="texto-principal" class="input-padrao" placeholder="Digite sua mensagem em letras minúsculas e sem acento!!!..." style="text-transform: lowercase;"></textarea> 
+
+      </fieldset>
+
+      <div class="enviar-container">
+          
+          <botton id="criptografar" class="enviar" onclick="criptografar()">Criptografar</botton>
+
+          <botton id = "descriptografar" class="enviar" onclick="descriptografar()">Descriptografar</botton>
+
+      </div>
+
+      <fieldset>    
+
+        <legend for="texto-resultado">Texto Criptografado</legend>
+        <textarea cols="50" rows="10" id="texto-resultado" class="input-padrao" placeholder="Mensagem Criptografada" readonly></textarea>
+
+      </fieldset>
+
+      <div class="opcao-container">
+
+        <button id="reiniciar" class="opcao">Reiniciar</button>
+       
+        <button id="copiar" class="opcao" onclick="copiar()" >Copiar</button>
+       
+        <button id="colar" class="opcao">Colar</button>
+
+      </div>
+
+    </main>
+
+  </body>
+
+
+  <!--atributo script js - async (assíncrono) - informa ao navegador que o script podr ser executado assincronamente (paralelamente) com o carregamento do HTML, mas está disponível paenas para arquivos externos-->
+    
+  <!--atributo script js - defer (defer) - informa ao navegador que o script só seja executado quando o carregamento do HTML  estiver finalizada-->
+    
+  <!-- Analise a necessidade e caso não precise se importar em que momento ele será executado, carregá-lo async é a opção correta-->
+
+   <script defer src="desafio.js" defer></script>
+  
+  
+
+  <footer>
+    <p class="copyright">&copy; Copyright - Criptografar / Descriptografar - 2022</p>
+
+    <div class="redes">
+        <p>Redes de contato: </p>
+            
+        <a href="https://github.com/ricardo-werner" title="GitHub | ricardo-werner">            
+              <img src="github.png" alt="Logo do GitHub em formato quadrado nas cores preto e branca."
+              width="30" height="30" id="github">
+              GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/ricardo-werner" title="LinkedIn | Ricardo Werner Grosscklauss">
+              <img src="linkedin.png" alt="Logo do LinkedIn em formato circular, com a botrda na cor azul e letras em fundo branco"
+              width="30" height="30" id="linkedin">
+              LinkedIn
+       </a>
+            
+    </div>
+
+  </footer>
+
+</html>
