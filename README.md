@@ -1,2 +1,2 @@
 # Encoder
-Página de Criptógrafo e Descriptófrafo
+Página de Criptógrafo e Descriptógrafo
