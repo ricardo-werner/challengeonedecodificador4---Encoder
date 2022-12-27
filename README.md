@@ -24,5 +24,3 @@ Sobre o Projeto:
   - funcionamento apenas com letras minúsculas, sem acentuação ou caracteres especiais.
   - Deve ser possível a conversão para o texto original => entra  sai => enterntrai  => entra.
   - Esta conversão deve aparecer na área de resultado.
-
-- Link do Projeto: https://ricardo-werner.github.io/Encoder/
