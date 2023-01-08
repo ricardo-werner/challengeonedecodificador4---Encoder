@@ -1,0 +1,180 @@
+header {
+	display: flex;
+	font-size: 20px;
+	padding: 10px;
+	border-bottom: 2px solid black;
+	background: #CE5937;
+	background: -moz-linear-gradient(45deg, #CE5937 0%, #1C6EA4 98%, #C59237 100%);
+	background: -webkit-linear-gradient(45deg, #CE5937 0%, #1C6EA4 98%, #C59237 100%);
+	background: linear-gradient(45deg, #CE5937 0%, #1C6EA4 98%, #C59237 100%);
+}
+
+.cabecalho {
+	width: 940px;
+	margin: 35px 35px;
+}
+
+.titulo-principal{
+	position: absolute;
+	font-size: 40px;
+	font-weight: bold;
+	top: 40px;
+	right: 250px;
+	text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+	color: #000000;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-bottom: 2px solid black;
+	background: #CE5937;
+	background: -moz-linear-gradient(-45deg, #CE5937 0%, #1C6EA4 98%, #C59237 100%);
+	background: -webkit-linear-gradient(-45deg, #CE5937 0%, #1C6EA4 98%, #C59237 100%);
+	background: linear-gradient(135deg, #CE5937 0%, #1C6EA4 98%, #C59237 100%);
+}
+
+fieldset, form label{
+	margin: 15px auto;
+	padding: 10px;
+	border: none;
+	font-family: "Rockwell";
+	letter-spacing: 3px;
+	color: #A7DD3C;
+	text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77,0,38,0.5), 3px 0 3px #FF002B, 5px 0 3px #800015, 6px 2px 3px rgba(77,0,13,0.5), 6px 0 9px #FF5500, 8px 0 9px #802A00, 9px 2px 9px rgba(77,25,0,0.5), 9px 0 18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77,66,0,0.5), 12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px rgba(64,77,0,0.5), 15px 0 45px #80FF00, 17px 0 45px #408000, 17px 2px 45px rgba(38,77,0,0.5);
+	color: #A7DD3C;
+}
+
+fieldset legend {
+	font-size: 25px;
+	font-family: "Comic Sans MS";
+}
+
+.input-padrao, legend {
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.input-padrao::placeholder {
+  color: red;
+  font-weight: bold;
+}
+
+.enviar-container button {
+	flex-direction: row;
+	align-items: center;
+}
+
+.enviar {
+	margin: 10PX;
+	padding: 10px;
+	width: 20%;
+	border: 1px solid black;
+  margin-bottom: 15px;
+	background-color: #db600f;
+	font-size: 18px;
+	font-family: "Rockwell";
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.enviar-container .enviar {
+	background-color: #075fdb ;
+	color: black;
+}
+
+.enviar:hover {
+	background-color: lightskyblue;
+}
+
+.enviar:active {
+	background-color: lightseagreen;
+}
+
+.opcao-container {
+  margin-bottom: 15px;
+	font-size: 18px;
+	font-family: "Rockwell";
+	border-radius: 15px;
+}
+
+.opcao-container .opcao {
+	background-color: lightskyblue;
+	border: 2px solid black;
+	border-radius: 8px;
+	transition: .3s;
+	cursor: pointer;
+}
+
+.opcao-container .opcao:hover {
+	background: green;
+	transform: scale(1.2);
+}
+
+.opcao-container .opcao:active {
+	background-color: lightseagreen;
+}
+
+footer{
+	background: #CE5937;
+	background: -moz-linear-gradient(45deg, #CE5937 0%, #1C6EA4 98%, #C59237 100%);
+	background: -webkit-linear-gradient(45deg, #CE5937 0%, #1C6EA4 98%, #C59237 100%);
+	background: linear-gradient(45deg, #CE5937 0%, #1C6EA4 98%, #C59237 100%);
+	font-size: 15px;
+	text-align: center;
+	padding: 20px 0;
+	border: none;
+	color: white;
+}
+
+.redes {
+	margin: 15px;
+	padding: 0 10x;
+
+}
+
+a {
+	margin: 20px;
+ 	cursor: pointer;
+ 	text-decoration: underline;
+}
+
+
+@media screen and (max-width: 480px){
+
+	.container, img , .titulo-principal, .main-container,  .opcao-container, .opcao{
+		width: auto;
+	}
+
+	#texto-principal, #texto-resultado{
+		width: 100%;
+	}
+
+	.cabecalho{
+		margin: 5px 20px;
+	}
+
+	h1 {
+		position: static;
+	}
+
+	.titulo-principal {
+		position: static;
+		margin: 20px auto;
+		font-size: 26px;
+	}
+
+	.input-padrao {
+		padding: 0;
+	}
+}
+
+
+
+
+
+
