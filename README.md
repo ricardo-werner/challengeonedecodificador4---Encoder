@@ -24,5 +24,7 @@ Sobre o Projeto:
   - funcionamento apenas com letras minúsculas, sem acentuação ou caracteres especiais.
   - Deve ser possível a conversão para o texto original => entra  sai => enterntrai  => entra.
   - Esta conversão deve aparecer na área de resultado.
+  
+  - Nova versão já contemplando dispositivos móveis, com resolução até 480px.
 
   - Link do Projeto - https://ricardo-werner.github.io/challengeonedecodificador4---Encoder/
